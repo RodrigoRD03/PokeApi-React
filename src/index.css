@@ -2,7 +2,10 @@
 
 
 :root{
-  font-family: 'Rubik', sans-serif;
+  --font-family: 'Rubik', sans-serif;
+  --color-white: #fff;
+  --color-black: #000000;
+  --color-gray: #636363;
 }
 
 *{
@@ -14,4 +17,10 @@
 
 body{
   font-family: 'Rubik', sans-serif;
+}
+
+.line-vertical{
+  background-color: var(--color-gray);
+  height: 300px;
+  width: .75px;
 }

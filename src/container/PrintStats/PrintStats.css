@@ -1,0 +1,68 @@
+.app__printStates-state {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 5px;
+  align-items: center;
+}
+
+.app__printStates-state p{
+    grid-column: 1/3;
+}
+
+.app__printState-section {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  background-color: #dddddd;
+  display: flex;
+  align-items: center;
+  border-radius: 50vh;
+}
+
+.app__printState-section p {
+  position: absolute;
+  margin-left: 80px;
+  font-size: .8em;
+}
+
+.backgroundColor_hp {
+  background-color: #5fad56;
+}
+.backgroundColor_attack {
+  background-color: #f85a3e;
+}
+.backgroundColor_defense {
+  background-color: #80ded9;
+}
+.backgroundColor_special-attack {
+  background-color: #e63b2e;
+}
+.backgroundColor_special-defense {
+  background-color: #3066be;
+}
+.backgroundColor_speed {
+  background-color: #ffc100;
+}
+
+.iconState {
+  font-size: 1.4em;
+}
+
+.color_hp {
+  color: #5fad56;
+}
+.color_attack {
+  color: #f85a3e;
+}
+.color_defense {
+  color: #80ded9;
+}
+.color_special-attack {
+  color: #e63b2e;
+}
+.color_special-defense {
+  color: #3066be;
+}
+.color_speed {
+  color: #ffc100;
+}

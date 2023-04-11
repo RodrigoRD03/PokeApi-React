@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 
-
 const  AbsorbApi = (paramAddress) => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);

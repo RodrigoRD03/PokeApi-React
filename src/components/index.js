@@ -1,5 +1,7 @@
-import PokedexScreen from './PokedexScreen/PokedexScreen';
+import PokeCard from "./PokeCard/PokeCard";
+import ListCards from "./ListCards/ListCards";
 
 export {
-    PokedexScreen
+    PokeCard,
+    ListCards,
 };

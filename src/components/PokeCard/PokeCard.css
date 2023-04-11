@@ -1,0 +1,89 @@
+.app__card {
+  width: 600px;
+  text-transform: capitalize;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.app__card-background {
+  height: 200px;
+  background-position: center;
+  animation: anim 2.5s infinite ease-in-out;
+  background-size: 300% 300%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.app__card-imagePokemon {
+  position: absolute;
+  padding: 10px;
+  border-radius: 50vh;
+  margin-left: 50px;
+  margin-top: -87px;
+  background-image: url("../../assets/images/Pokeball.png");
+  background-size: 168px 168px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.app__card-imagePokemon img {
+  width: 150px;
+}
+.app__card-informationPokemon {
+  background-color: var(--color-white);
+  padding: 20px;
+  padding-top: 95px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: grid;
+  grid-template:
+    "Name Line Stats"
+    "Types Line Stats";
+  gap: 15px;
+}
+
+.app__card-informationPokemon_name {
+  grid-area: Name;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__card-informationPokemon_name h1 {
+  font-size: 1.7em;
+}
+
+.app__card-informationPokemon_name h3 {
+  color: var(--color-gray);
+}
+
+.app__card-informationPokemon_types {
+  grid-area: Types;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.line {
+  grid-area: Line;
+  height: 100%;
+}
+
+.app__card-informationPokemon_Stats {
+  grid-area: Stats;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@keyframes anim {
+  0% {
+    background-position: 0.5%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

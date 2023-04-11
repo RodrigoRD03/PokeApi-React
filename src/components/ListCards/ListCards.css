@@ -1,0 +1,12 @@
+.app__listCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.app__ListCards-NumberGeneration{
+}
+.app__listCards-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
