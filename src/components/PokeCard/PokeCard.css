@@ -31,14 +31,16 @@
 }
 .app__card-informationPokemon {
   background-color: var(--color-white);
-  padding: 20px;
+  padding: 30px;
   padding-top: 95px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   display: grid;
   grid-template:
-    "Name Line Stats"
-    "Types Line Stats";
+    "Name Line Stats" auto
+    "Types Line Stats" auto
+    "Habilities Line Stats" auto / 
+    260px max-content auto;
   gap: 15px;
 }
 
@@ -55,6 +57,7 @@
 
 .app__card-informationPokemon_name h3 {
   color: var(--color-gray);
+  margin-right: 10px;
 }
 
 .app__card-informationPokemon_types {
@@ -62,6 +65,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.app__card-informationPokemon_habilities {
+  grid-area: Habilities;
+  padding: 20px;
+}
+.app__card-informationPokemon_habilities h3{
+  margin-left: -20px;
 }
 
 .line {
@@ -74,6 +85,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-left: 20px;
 }
 
 @keyframes anim {

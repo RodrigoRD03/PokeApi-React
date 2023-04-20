@@ -40,12 +40,22 @@ const PokeCard = ({ paramAdress }) => {
               <h3>N° {pokemon.id}</h3>
             </div>
             <div className="app__card-informationPokemon_types">
+              <h3>Type:</h3>
               {pokemon.types.map((types) => (
                 <PrintTypes type={types.type.name} />
               ))}
             </div>
+            <div className="app__card-informationPokemon_habilities">
+              <h3>Habilities:</h3>
+              <ul>
+              {pokemon.abilities.map((ability) => (
+                <li>{ability.ability.name}</li>
+              ))}
+              </ul>
+            </div>
             <div className="line-vertical line" />
             <div className="app__card-informationPokemon_Stats">
+              <h3>Stats:</h3>
               {pokemon.stats.map((stat) => (
                 <PrintStats stat={stat} />
               ))}
